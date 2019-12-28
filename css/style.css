@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kulim Park', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 15% auto 5%;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.2rem;
+}
+
+.logo {
+  justify-content: center;
+  width: 200px;
+  height: 47px;
+}
+
+/* main */
+
+.introduce {
+  text-align: center;
+  height: 47vh;
+}
+
+.introduce h1 {
+  font-size: 6rem;
+  margin-bottom: auto;
+}
+
+.hash-tags {
+  display: flex;
+  justify-content: center;
+}
+
+.hash-tags h3 {
+  padding: 0 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #c8c8c8;
+  margin: 7rem 12rem 4rem 12rem;
+}
+
+.title h1 {
+  margin-bottom: 1rem;
+}
+
+.portfolio {
+  margin-bottom: 20rem;
+}
+
+.portfolio-1,
+.portfolio-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-align: center;
+}
+
+.portfolio-1 {
+  margin-bottom: 10rem;
+}
