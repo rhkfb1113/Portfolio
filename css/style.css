@@ -5,13 +5,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   display: grid;
   display: inline-block;
   width: 100%;
   grid-template-rows: 3% auto 3%;
+  background-color: black;
+  color: #fff;
 }
 
 /* Header */
@@ -20,59 +22,57 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem;
-}
-
-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-nav a {
-  color: black;
-  padding: 0 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
+  border-bottom: 8px solid #222;
 }
 
 .logo {
-  width: 185px;
-  height: 43px;
+  width: 175px;
+  height: 45px;
 }
 
 /* Main */
 
-.introduce {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.video-bg {
+  width: 100%;
   height: 88vh;
-  background-color: #f1f2fd;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.introduce {
+  height: 88vh;
   text-align: center;
+  z-index: 2;
+  border-bottom: 8px solid #222;
 }
 
 .introduce h1 {
-  font-size: 6rem;
+  font-size: 4.5rem;
+  width: 800px;
+  margin: 0 auto;
   margin-bottom: 70px;
   padding-top: 198px;
+  line-height: 5.2rem;
 }
 
 .introduce p {
-  width: 400px;
+  width: 550px;
   text-align: center;
-  padding-top: 4rem;
-  margin: 0 auto;
-  font-size: 1.2rem;
+  padding: 1rem auto;
+  margin: 0 auto 2rem auto;
+  font-size: 1.5rem;
 }
 
 .hash-tags {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
-  color: #333;
+  font-size: 1.1rem;
 }
 
 .hash-tags h3 {
-  padding: 0 10px;
+  padding: 0 7px;
 }
 
 .title {
@@ -84,71 +84,92 @@ nav a {
 
 .title h1 {
   margin-bottom: 1rem;
-  color: #333;
 }
 
 .portfolio-1,
 .portfolio-2 {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  grid-gap: 4rem;
   text-align: center;
-}
-
-.portfolio-1 {
-  margin: 7rem auto 15rem auto;
+  border-bottom: 8px solid #222;
+  padding: 7rem 3rem;
 }
 
 .portfolio-1 .port-img {
-  width: 75%;
+  width: 45%;
+  height: auto;
   margin-left: auto;
 }
 
 .portfolio-2 .port-img {
-  width: 75%;
+  width: 60%;
   margin-right: auto;
+}
+
+.portfolio-text-card-1,
+.portfolio-text-card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
 .portfolio-text-card-1 {
   text-align: left;
-  font-size: 1.5rem;
 }
 
 .portfolio-text-card-2 {
   text-align: right;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .portfolio-text-card-1 h3,
 .portfolio-text-card-2 h3 {
-  margin: 0 auto 1.5rem auto;
+  font-size: 3rem;
 }
 
-.portfolio-text-card-1 a,
-.portfolio-text-card-2 a {
+.port-1-text,
+.port-2-text {
+  margin-top: 2rem;
+  padding: 0 5px;
+}
+
+.port-1-text a,
+.port-2-text a {
   text-decoration: none;
+  color: #fff;
+}
+
+.port-btn {
+  border: 1px solid #e50914;
+  border-radius: 5px;
+  background-color: #e50914;
   color: black;
+  padding: 10px 15px;
+  font-size: 1.3rem;
 }
 
 /* Contact */
 
 .contact {
-  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 5rem 0;
 }
 
 .contact-icons {
   font-size: 3rem;
   text-align: center;
-  padding-top: 5rem;
 }
 
 .contact-icons a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .contact-icons i {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 /* Footer */
@@ -159,52 +180,53 @@ nav a {
   font-size: 13px;
 }
 
-@media (max-width: 550px) {
-  /* Header */
+/* Media */
 
+@media (max-width: 850px) {
+  /* Header */
   header {
-    padding: 15px 3px;
-  }
-  nav a {
-    color: black;
-    padding: 0 10px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
+    padding: 15px 5px;
   }
 
   .logo {
     width: 100px;
-    height: 25px;
+    height: 30px;
   }
 
   /* Main */
+  .video-bg {
+    height: 75vh;
+  }
+
   .introduce {
     height: 75vh;
   }
 
   .introduce h1 {
-    font-size: 4rem;
-    margin-bottom: 35px;
+    width: 400px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     padding-top: 172px;
   }
 
-  .hash-tags {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    color: #333;
+  .introduce p {
+    width: 300px;
+    font-size: 1.25rem;
   }
 
-  .hash-tags h3 {
-    padding: 0 3px;
+  .hash-tags {
+    display: none;
   }
 
   .portfolio-1,
   .portfolio-2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     text-align: center;
+  }
+
+  .portfolio-2 {
+    flex-direction: column-reverse;
   }
 
   .portfolio-1 .port-img {
@@ -217,16 +239,31 @@ nav a {
     margin: 0 auto;
   }
 
-  .portfolio-text-card-1 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-
+  .portfolio-text-card-1,
   .portfolio-text-card-2 {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
+    margin-top: 1.5rem;
   }
+}
+
+/* Loading Page */
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
 }
