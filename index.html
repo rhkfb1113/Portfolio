@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>윤동현 포트폴리오</title>
   </head>
@@ -20,71 +21,73 @@
       <img class="logo" src="/img/logo.png" alt="logo" />
     </header>
     <main>
-      <div class="video-bg">
-        <video
-          source
-          src="https://drive.google.com/uc?export=download&id=1djhzaeDgBJLX81bAqxpTvw6_NkViv5dG"
-          type="video/mp4"
-          autoplay="true"
-          loop="true"
-        ></video>
-      </div>
       <div class="introduce">
-        <h1>무급이여도 좋습니다.<br />가르쳐만 주신다면.</h1>
-        <p>
-          진심입니다. 아직 많이 부족합니다. 하지만 새로운 정보를 받아들이는
-          능력이 탁월합니다. 가르쳐주시면 빠르게 배워서 적용시킬 자신 있습니다.
-        </p>
-        <div class="hash-tags">
-          <h3>#윤동현</h3>
-          <h3>#24세</h3>
-          <h3>#신입</h3>
-          <h3>#HTML</h3>
-          <h3>#CSS</h3>
-          <h3>#JavaScript</h3>
+        <h1>한 달간 <br />무료로 일하겠습니다.<br />가르쳐만 주신다면.</h1>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <p>
+            진심입니다. 한 달간 써보시고 반품하셔도 됩니다. 새로운 정보를
+            받아들이는 능력이 탁월합니다. 빠르게 배워 적용시키는 모습
+            보여드리겠습니다.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="hash-tags">
+            <h3>#윤동현</h3>
+            <h3>#24세</h3>
+            <h3>#신입</h3>
+            <h3>#HTML</h3>
+            <h3>#CSS</h3>
+            <h3>#JavaScript</h3>
+            <h3>#010-8855-3533</h3>
+          </div>
         </div>
       </div>
       <div class="portfolio">
-        <div class="portfolio-1">
-          <img class="port-img" src="/img/pf-1.png" alt="ppp1" />
-          <div class="portfolio-text-card-1">
-            <h3>카카오톡 클론</h3>
-            <div class="port-1-text">
-              <a
-                class="port-btn"
-                href="https://imydh-kakao-clone.netlify.com/"
-                target="_blank"
-              >
-                <span>자세히 보기</span>
-              </a>
+        <div data-aos="fade-right" data-aos-duration="2500">
+          <div class="portfolio-1">
+            <img class="port-img" src="/img/pf-1.png" alt="ppp1" />
+            <div class="portfolio-text-card-1">
+              <h3>카카오톡 클론</h3>
+              <div class="port-1-text">
+                <a
+                  class="port-btn"
+                  href="https://imydh-kakao-clone.netlify.com/"
+                  target="_blank"
+                >
+                  <span>자세히 보기</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-2">
-          <div class="portfolio-text-card-2">
-            <h3>넷플릭스 클론</h3>
-            <div class="port-2-text">
-              <a
-                class="port-btn"
-                href="https://imydh-netflix-clone.netlify.com/"
-                target="_blank"
-              >
-                <span>자세히 보기</span>
-              </a>
+        <div data-aos="fade-left" data-aos-duration="2500">
+          <div class="portfolio-2">
+            <div class="portfolio-text-card-2">
+              <h3>넷플릭스 클론</h3>
+              <div class="port-2-text">
+                <a
+                  class="port-btn"
+                  href="https://imydh-netflix-clone.netlify.com/"
+                  target="_blank"
+                >
+                  <span>자세히 보기</span>
+                </a>
+              </div>
             </div>
+            <img class="port-img" src="/img/pf-2.png" alt="ppp2" />
           </div>
-          <img class="port-img" src="/img/pf-2.png" alt="ppp2" />
         </div>
       </div>
       <div class="contact">
-        <div class="contact-icons">
-          <a href="https://github.com/rhkfb1113" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://blog.naver.com/dkak532" target="_blank">
-            <i class="fab fa-blogger"></i>
-          </a>
-          <i class="fas fa-phone-square-alt"></i>
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <div class="contact-icons">
+            <a href="https://github.com/rhkfb1113" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://blog.naver.com/dkak532" target="_blank">
+              <i class="fab fa-blogger"></i>
+            </a>
+          </div>
         </div>
       </div>
     </main>
@@ -93,5 +96,9 @@
         Imydh &copy;2019
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

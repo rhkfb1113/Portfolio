@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   display: grid;
   display: inline-block;
-  width: 100%;
+  overflow-x: hidden;
   grid-template-rows: 3% auto 3%;
   background-color: black;
   color: #fff;
@@ -26,31 +26,22 @@ header {
 }
 
 .logo {
-  width: 175px;
+  width: 155px;
   height: 45px;
 }
 
 /* Main */
 
-.video-bg {
-  width: 100%;
-  height: 88vh;
-  overflow: hidden;
-  position: absolute;
-  opacity: 0.45;
-  z-index: -1;
-}
-
 .introduce {
-  height: 88vh;
+  height: 90vh;
   text-align: center;
   z-index: 2;
   border-bottom: 8px solid #222;
 }
 
 .introduce h1 {
-  font-size: 4.5rem;
-  width: 800px;
+  font-size: 4rem;
+  width: 700px;
   margin: 0 auto;
   margin-bottom: 70px;
   padding-top: 198px;
@@ -147,7 +138,7 @@ header {
   background-color: #e50914;
   color: black;
   padding: 10px 15px;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 /* Contact */
@@ -195,11 +186,11 @@ header {
 
   /* Main */
   .video-bg {
-    height: 75vh;
+    height: 90vh;
   }
 
   .introduce {
-    height: 75vh;
+    height: 90vh;
   }
 
   .introduce h1 {
